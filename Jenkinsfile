@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build (Compiling)') {
             steps {
                 sh 'mvn --version'
             }
         }
-        stage('test'){
+        stage('Unit Test (JUnit)'){
         	steps{
         		sh 'mvn install test'
         	}
