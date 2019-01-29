@@ -17,7 +17,7 @@ pipeline {
                     -DartifactId=my-artifact-id \
                     -Dversion=1.0.0.1 \
                     -Dpackaging=jar \
-                    -Dfile=target//*.jar \
+                    -Dfile=target/CalcDemoJenkins-0.0.1-SNAPSHOT.jar \
                     -DgeneratePom=true \
                     -DrepositoryId=my-repo \
                     -Durl=http://localhost:8081/repository/maven-releases/'
