@@ -14,6 +14,7 @@ pipeline {
         stage('Deploy Artifact (Nexus)') {
             steps {
                 sh 'mvn deploy:deploy-file -DgroupId=my.group.id \
+                    -DartifactId=marcos \
                     -Dversion=1.0.0.1 \
                     -Dpackaging=jar \
                     -Dfile=target/CalcDemoJenkins-0.0.1-SNAPSHOT.jar \
